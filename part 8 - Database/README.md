@@ -9,10 +9,10 @@ With a note, the source code inside is only used as a reference to compare the m
 
 Some important notes you need to know:
 - If there is an error with the message "sqlalchemy.exc.Integrityerror: UNIQUE constraint failed: tmahasiswa.email ...." then you must re-check the data you entered as a database table. Because the email is unique, there can be no duplicate or the same email in the new data. For that you have to delete it or use another email.
-- ![Error1_Solution](part%208%20-%20Database/img/Slide1.PNG)
+- ![Error1_Solution](img/Slide1.PNG)
 
 - If there is an error and the message "Database is locked" while opening the DB Browser application, then you must close the application first to avoid timeouts that occur. After the DB Browser application is closed, please re-enter the data that you will enter in the Student Registration Form.
-- ![Error2_Solution](part%208%20-%20Database/img/Slide2.PNG)
+- ![Error2_Solution](img/Slide2.PNG)
 
 Note : **"routes.py" untuk folder templates**
 
