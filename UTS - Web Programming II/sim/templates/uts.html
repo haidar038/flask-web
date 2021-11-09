@@ -1,0 +1,103 @@
+{% extends "base.html"%}
+
+{% block container%}
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-sm-8">
+            <div class="card shadow">
+                <div class="card-body rounded">
+                    <!-- Flash -->
+                    {% with messages= get_flashed_messages(with_categories=true) %}
+                    {% if messages  %}
+                    {% for category, message in messages %}
+                    <div class="alert alert-{{category}}" role="alert">
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %}
+                    <h1 class="card-title mb-3">UTS</h1>
+                    <p class="text-muted">Biodata Singkat</p>
+
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <form class="mb-4" method="post">
+                                {{form.hidden_tag()}}
+                                <p class="fs-4 fw-bold">Komentar</p>
+                                <!-- email -->
+                                <div class="form-group mb-3">
+                                    {{form.email.label(class="form-control-label")}}
+
+                                    {% if form.email.errors %}
+                                    {{form.email(class="form-control is-invalid")}}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.email.errors %}
+                                        <span>{{error}}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                    {{form.email(class="form-control")}}
+        
+                                    {% endif %}
+                                </div>
+        
+                                <!-- komentar -->
+                                <div class="form-group mb-3">
+                                    {{form.komentar.label(class="form-control-label")}}
+                                    {% if form.komentar.errors %}
+                                    {{form.komentar(class="form-control is-invalid")}}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.komentar.errors %}
+                                        <span>{{error}}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                    {{form.komentar(class="form-control")}}
+        
+                                    {% endif %}
+                                </div>
+        
+                                <div class="mb-3">
+                                    <button type="submit" class="btn btn-primary">Kirim</button>
+                                </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card shadow">
+                          <div class="card-body">
+                            <h3 class="card-title">Hasil Komentar</h3>
+                            <ul class="square-list">
+                                <li>Positif : 50%</li>
+                                <li>Negatif : 40%</li>
+                                <li>Netral : 10%</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card shadow">
+                <div class="card-body rounded">
+                    <h4 class="card-title">Navigation</h4>
+                    <ul class="text-custom">
+                        <li><a href="{{url_for('rmahasiswa.home')}}">Home</a></li>
+                        <li><a href="{{url_for('rmahasiswa.about')}}">About</a></li>
+                        <li><a href="{{url_for('rmahasiswa.contact')}}">Contact</a></li>
+                        <li><a href="{{url_for('rmahasiswa.data_m')}}">Data Mahasiswa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}
