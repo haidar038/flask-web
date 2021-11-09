@@ -22,7 +22,7 @@ Have a nice day😁😃✨
 
 ## Translate
 
-This is a repository that includes the learning I did in my lectures. For you visitors who come from the same campus, you can download and make it as one of your references. Likewise other visitors.
+Ini adalah repositori yang mencakup pembelajaran yang saya lakukan di perkuliahan saya. Untuk anda pengunjung yang berasal dari kampus yang sama, anda bisa mengunduh dan menjadikannya sebagai salah satu referensi anda. Begitupun pengunjung yang lain. 
 
 ### Mencakup :
 - Instalasi
