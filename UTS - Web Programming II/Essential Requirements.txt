@@ -1,0 +1,8 @@
+Persyaratan Yang Harus Dilakukan Untuk Membuat Halaman Baru
+
+- Link untuk halaman Form UTS pada base
+- Menambah Class pada forms.py di Folder 'mahasiswa'
+- Menambah deklarasi Fungsi pada routes.py di Folder 'mahasiswa'
+- Menambah satu file html untuk halaman Form UTS pada folder 'templates'
+
+Have a nice day!
