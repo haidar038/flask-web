@@ -1,4 +1,4 @@
-# Flask Web - Web Programming II UMMU
+# Flask Web
 
 This is a repository that includes the learning I did in my lectures. For you visitors who come from the same campus, you can download and make it as one of your references. Likewise other visitors.
 
@@ -15,6 +15,8 @@ This is a repository that includes the learning I did in my lectures. For you vi
 - Profile Updates
 - CRUD
 - Advanced (Data Details)
+- MySQL
+- Flask Migrate
 
 Have a nice day😁😃✨
 
@@ -35,5 +37,7 @@ This is a repository that includes the learning I did in my lectures. For you vi
 - Update Profil
 - CRUD
 - Lanjutan (Detail Data)
+- MySQL
+- Flask Migrate
 
 Semoga harimu menyenangkan😁😃✨
